@@ -7,6 +7,8 @@ export default defineConfig({
 	plugins: [sveltekit(), tailwindcss()],
 
 	test: {
+		reporters: ['default', 'junit'],
+		outputFile: 'vitest-results.xml',
 		workspace: [
 			{
 				extends: './vite.config.ts',
