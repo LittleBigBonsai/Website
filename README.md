@@ -1,38 +1,22 @@
-# sv
+# Bonsai Website
+This project is a web frontend for various community-maintained LBP gameservers. While most
+gameservers have built-in web UIs, this project aims to remove the need for them with the goal of
+being more visually pleasing and easier to use. It is made using Sveltekit.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+### Finding your way around / other notes
+This section assumes you have basic familiarity with how to use Svelte, if you don't
+then [here's the documentation](https://svelte.dev/docs/kit/introduction).
 
-## Creating a project
+ - Static assets, like the site's icon, live in `static/`.
+ - Everything to do with layout and pages is in `src/routes/`.
+ - Drivers for communicating with LBP gameservers live in `src/lib`.
 
-If you're seeing this, you've probably already done this step. Congrats!
+This project uses TypeScript.
 
-```bash
-# create a new project in the current directory
-npx sv create
+Styling is done with Tailwind CSS.
 
-# create a new project in my-app
-npx sv create my-app
-```
+Unit tests are done using vitest.
 
-## Developing
+Browser tests are done using Playwright.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Package management is done with pnpm.
